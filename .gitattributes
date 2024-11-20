@@ -1,0 +1,8 @@
+# Track large files with Git LFS
+*.pkl filter=lfs diff=lfs merge=lfs -text
+*.jpeg filter=lfs diff=lfs merge=lfs -text
+
+# Ignore Python bytecode and virtual environment
+*.pyc           text eol=lf
+__pycache__/     directory
+venv/            directory
